@@ -5,13 +5,19 @@ using UnityEngine;
 public class ObjectSpawner : MonoBehaviour
 {
     public float speed = 20f;
+
     void Update()
     {
-        transform.position += Vector3.up * speed * Time.deltaTime; // 위로 이동
+        transform.position += Vector3.up * speed * Time.deltaTime;
+        Destroy(gameObject, 0.5f);
     }
-    void OnBecameInvisible()
-    {
-        Destroy(gameObject); // 화면 밖으로 나가면 삭제
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
     }
 }
