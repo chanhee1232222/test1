@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
-        float randomSpawnInterval = Random.Range(2f, 5f);
+        float randomSpawnInterval = Random.Range(1f, 4f);
         InvokeRepeating("SpawnEnemy", 0f, randomSpawnInterval);
     }
 

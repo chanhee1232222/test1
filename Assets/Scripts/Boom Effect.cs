@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BoomEffect : MonoBehaviour
-{
+{ 
     private Animator animator;
 
     void Start()

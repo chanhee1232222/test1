@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform playerStartPosition;   //플레이어 시작위치
 
-
     void Start()
     {
         transform.position = playerStartPosition.position;

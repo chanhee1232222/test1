@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int speed;
+    public float speed;
     private Vector2 moveDirection = Vector2.down;
     private Animator animator;
     public GameObject explosionEffect;
@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         animator.Play("Easy Enemy");
-        speed = Random.Range(1, 3);
+        speed = Random.Range(1f, 3f);
 
     }
 

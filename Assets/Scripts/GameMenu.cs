@@ -7,6 +7,6 @@ public class GameMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Game Play"); // "GameScene" 이름의 씬으로 이동
+        SceneManager.LoadScene("Game Play"); //"Game Play" 이름의 씬으로 이동
     }
 }
